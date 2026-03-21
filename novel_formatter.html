@@ -370,11 +370,7 @@
       <input type="checkbox" id="chk_scene_break" checked>
       <code>$</code> / <code>$$</code> / <code>$$$</code> を空行に変換（1行・2行・3行）
     </label>
-    <label class="setting-item">
-      場面転換の空行数：
-      <input type="number" id="scene_break_lines" value="3" min="2" max="6">
-      行
-    </label>
+
     <label class="setting-item">
       <input type="checkbox" id="chk_indent" checked>
       行頭の全角スペースを保持
@@ -435,7 +431,7 @@ function format() {
     removeHr:       document.getElementById('chk_remove_hr').checked,
     removeInvisible: document.getElementById('chk_invisible').checked,
     preserveSceneBreak: document.getElementById('chk_scene_break').checked,
-    sceneBreakLines: parseInt(document.getElementById('scene_break_lines').value) || 3,
+    sceneBreakLines: 3,
     preserveIndent: document.getElementById('chk_indent').checked,
   };
 
